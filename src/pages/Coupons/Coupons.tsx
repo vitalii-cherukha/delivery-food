@@ -1,5 +1,13 @@
+import Container from "../../components/Container/Container";
+
 const Coupons = () => {
-  return <div>Coupons</div>;
+  return (
+    <section>
+      <Container>
+        <div>Coupons</div>
+      </Container>
+    </section>
+  );
 };
 
 export default Coupons;

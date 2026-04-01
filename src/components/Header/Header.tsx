@@ -6,8 +6,13 @@ const Header = () => {
   return (
     <header className={css.header}>
       <Container>
-        <nav className={css.nav}>
-          <ul className={css.list}>
+        <div className={css.inner}>
+          <Link to="/shop" className={css.brand}>
+            <img src="/logo.svg" alt="FoodRush logo" className={css.logo} />
+            <span className={css.brandName}>FoodRush</span>
+          </Link>
+          <nav className={css.nav}>
+            <ul className={css.list}>
             <li className={css.item}>
               <Link className={css.link} to="/shop">
                 Shop
@@ -29,7 +34,8 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-        </nav>
+          </nav>
+        </div>
       </Container>
     </header>
   );
